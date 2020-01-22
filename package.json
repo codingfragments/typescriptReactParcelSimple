@@ -1,0 +1,24 @@
+{
+  "name": "typescriptSimple",
+  "version": "0.0.1",
+  "description": "Simple Typescript based React App using parcel.js ",
+  "main": "index.html",
+  "author": "Stefan Marx <stefan.marx@datadoghq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "typescript": "^3.7.5"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.19",
+    "@types/react-dom": "^16.9.5",
+    "parcel-bundler": "^1.12.4"
+  },
+  "scripts": {
+    "start": "parcel serve ./src/index.html",
+    "build": "parcel build ./src/index.html --detailed-report 10",
+    "clean": "rm -rf ./dist ./.cache",
+    "rebuild": "yarn run clean ; yarn run build"
+  }
+}
